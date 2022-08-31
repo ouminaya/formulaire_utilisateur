@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(242, 194, 92) !important;
+}
+
+img{
+    width: 50px;
+}
+.see-more{
+    cursor: pointer;
+}
+.contenedor-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .contenedor-modal button {
+    position: relative;
+    top: 40%;
+  }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulaire d'inscription</title>
+    
+</head>
+
+<body>
+    <div class="container mt-5 border border-3 p-5">
+        <h1 class="text-center mb-5">Formulaire d'inscription</h1>
+        <form action="" id="form">
+            <div class="row">
+                <div class="mb-2">
+                    <div class="col w-25 float-end">
+                        <label class="form-label" for="customFile">Entrez votre photo</label>
+                        <input type="text" class="form-control" id="customFile" name="avatar"
+                            placeholder="http://www" required/>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Name input -->
+                    <div class="form-outline">
+                        <input type="text" id="form8Example3" class="form-control" name="firstname" required/>
+                        <label class="form-label" for="form8Example3">Prénom</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Name input -->
+                    <div class="form-outline">
+                        <input type="text" id="form8Example4" class="form-control" name="lastname" required/>
+                        <label class="form-label" for="form8Example4">Nom</label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col">
+                    <!-- Email input -->
+                    <div class="form-outline">
+                        <input type="email" id="form8Example2" class="form-control" name="email" placeholder="Email..." required />
+                        <label class="form-label" for="form8Example2">Adresse email</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Phone input -->
+                    <div class="form-outline">
+                        <input type="phone" id="form8Example2" class="form-control" name="phone" placeholder="Numéros de téléphone..." required/>
+                        <label class="form-label" for="form8Example2">Téléphone</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Contrat input -->
+                    <label for="inputState">Type de contrat</label>
+                    <select id="inputState" class="form-control" name="contract">
+                        <option selected>CDI</option>
+                        <option>CDD</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <!-- Birthday input -->
+                    <div class="form-outline">
+                        <input type="date" id="form8Example4" class="form-control" name="birthday" required/>
+                        <label class="form-label" for="form8Example4">Date de naissance</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- Expérience input -->
+                    <div class="form-outline">
+                        <input type="text" id="form8Example4" class="form-control" name="exp" required/>
+                        <label class="form-label" for="form8Example4">Expérience</label>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-block btn-lg">Inscription</button>
+        </form>
+    </div>
+
+    <div class="container mt-5">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Photo</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Expérience</th>
+                    <th scope="col">Contrat</th>
+                    <th scope="col">Téléphone</th>
+                </tr>
+            </thead>
+            <tbody id="employersContainer">
+            </tbody>
+        </table>
+    </div>
+
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button> -->
+          
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Infos utilisateur</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="monModal" class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+      
+       
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"
+        integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
