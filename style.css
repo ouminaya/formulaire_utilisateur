@@ -19,3 +19,10 @@ img{
     position: relative;
     top: 40%;
   }
+  input:valid{
+    border:1px solid green;
+  }
+  input:invalid{
+
+    border: 1px solid red;
+  }

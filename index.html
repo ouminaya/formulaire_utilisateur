@@ -30,14 +30,14 @@
                 <div class="col">
                     <!-- Name input -->
                     <div class="form-outline">
-                        <input type="text" id="form8Example3" class="form-control" name="firstname" required/>
+                        <input type="text" id="form8Example3" class="form-control" name="firstname" required pattern="[a-z]{2,30}"/>
                         <label class="form-label" for="form8Example3">Prénom</label>
                     </div>
                 </div>
                 <div class="col">
                     <!-- Name input -->
                     <div class="form-outline">
-                        <input type="text" id="form8Example4" class="form-control" name="lastname" required/>
+                        <input type="text" id="form8Example4" class="form-control" name="lastname" required pattern="[a-z]{2,30}/>
                         <label class="form-label" for="form8Example4">Nom</label>
                     </div>
                 </div>
@@ -49,36 +49,36 @@
                 <div class="col">
                     <!-- Email input -->
                     <div class="form-outline">
-                        <input type="email" id="form8Example2" class="form-control" name="email" placeholder="Email..." required />
+                        <input type="email" id="form8Example2" class="form-control" name="email" placeholder="Email..." required pattern="^[\w-.]+@([\w-]+.)+[\w-]{2,4}$" />
                         <label class="form-label" for="form8Example2">Adresse email</label>
                     </div>
                 </div>
                 <div class="col">
                     <!-- Phone input -->
                     <div class="form-outline">
-                        <input type="phone" id="form8Example2" class="form-control" name="phone" placeholder="Numéros de téléphone..." required/>
+                        <input type="phone" id="form8Example2" class="form-control" name="phone" placeholder="Numéros de téléphone..." required pattern="[0-9]{10}"/>
                         <label class="form-label" for="form8Example2">Téléphone</label>
                     </div>
                 </div>
                 <div class="col">
                     <!-- Contrat input -->
-                    <label for="inputState">Type de contrat</label>
                     <select id="inputState" class="form-control" name="contract">
                         <option selected>CDI</option>
                         <option>CDD</option>
                     </select>
+                    <label for="inputState">Type de contrat</label>
                 </div>
                 <div class="col">
                     <!-- Birthday input -->
                     <div class="form-outline">
-                        <input type="date" id="form8Example4" class="form-control" name="birthday" required/>
+                        <input type="date" id="birthday" class="form-control" name="birthday" required/>
                         <label class="form-label" for="form8Example4">Date de naissance</label>
                     </div>
                 </div>
                 <div class="col">
                     <!-- Expérience input -->
                     <div class="form-outline">
-                        <input type="text" id="form8Example4" class="form-control" name="exp" required/>
+                        <input type="number" id="form8Example4" class="form-control" name="exp" required min="0" max="50"/>
                         <label class="form-label" for="form8Example4">Expérience</label>
                     </div>
                 </div>
